@@ -1,6 +1,6 @@
-This is a solo project while studying on Scrimba 
+This is a solo project while studying on Scrimba - but using cache, as sometimes long html text couldn't be parsed correctly
 
-Used: HTML, CSS, JS, JSON, API, local storage
+Used: HTML, CSS, JS, JSON, API, local storage 
 
 The requirements for doing this solo project were:
 	Two pages - index.html and watchlist.html.
