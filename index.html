@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="header"> 
+            <h1>Find your film</h1>
+            <h2><a href="watchlist.html">My watchlist</a></h2>
+        </div>
+
+        <div class="search-container">
+            <form class="search-form">
+              <div class="search-wrapper">
+                <i class="fas fa-search"></i>
+                <input id="search" type="text" placeholder="Search for a movie" name="search">
+              </div>
+              <button id="get-film">Search</button>
+            </form>
+        </div>
+
+        <div id="populated-list" class="populated-list">
+            <div class="initial">
+                <img class="tape" src="img/Icon.png" alt="tape film" />
+                <h3 class="blank-list">Start exploring</h3>
+            </div>
+        </div>
+  
+        <script src="index.js"></script>
+    </body>
+</html>

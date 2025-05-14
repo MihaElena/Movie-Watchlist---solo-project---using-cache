@@ -1,0 +1,326 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 550px;
+    margin: 0 auto;
+    font-family: "Inter", sans-serif;   
+}
+
+body {
+    background-color: #BCC2C2;
+}
+
+/**=======================
+   Header
+   =======================*/
+
+div.header {
+    background-image: url("img/header-img.png"), linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));;
+    background-blend-mode: overlay;
+    background-size: 663px 1061px;    /* dimensiunea completă a imaginii */
+    background-position: -50px -190px; /* poziția porțiunii dorite */
+    background-repeat: no-repeat;
+    padding-top: 83px;
+    padding-bottom: 78px;
+    padding-left: 42px;
+    padding-right: 46px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;   
+}
+
+
+div.header > h1,
+div.header > h3 {
+    margin: 0;
+}
+
+div.header > h1 {    
+    font-size: 43px;
+    font-weight: 800;
+    line-height: 23.775px; /* 55.556% */
+    letter-spacing: -1.926px;
+}
+
+div.header > h2 {
+    text-align: right;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px; /* 142.857% */
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/**=======================
+   Search input + search button
+   =======================*/
+  .search-container {
+    display: flex;
+    justify-content: center;
+    margin-top: -20px;
+  }
+
+  .search-form {
+    display: flex;
+    align-items: center;
+  }
+
+  .search-wrapper {
+    display: flex;
+    align-items: center;
+    border: 1px solid #D1D5DB;
+    border-right: none;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    padding: 8px 12px;
+    background-color: white;
+  }
+
+  .search-wrapper i {
+    color: #6B7280;
+  }
+
+  input[type="text"] {
+    border: none;
+    color: #6B7280;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px; /* 142.857% */
+    margin-left: 8px;
+    outline: none;
+    width: 316px;
+  }
+
+  button#get-film {
+    color: var(--gray-700, #374151);
+    background: var(--gray-50, #F9FAFB);
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px; /* 142.857% */
+    border: 1px solid #D1D5DB;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    padding: 9px 25px 9px 25px;
+    cursor: pointer; 
+  }
+
+  button#get-film:hover {
+    background-color: #D1D5DB;
+  }
+
+  /**=======================
+   Populated list div
+   =======================*/
+div.populated-list {
+    margin-top: -20px;
+    padding-top: 60px;
+    padding-left: 44px;
+    padding-right: 44px;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+}
+
+  /**=======================
+   Film container div
+   =======================*/
+div.initial {
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 269px;
+}
+
+   img.tape {
+    width: 70px;
+    height: 61.25px;
+    flex-shrink: 0;
+    align-self: center;
+    margin-bottom: 9px;
+}
+
+h3.blank-list {
+    color: #DFDDDD;
+    text-align: center;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px; /* 111.111% */
+    margin-top: 0;
+    
+}
+
+   div.film-container {
+    background-color: whitesmoke;
+    display: flex;
+    gap: 21px;
+    padding-top: 21px;
+    padding-bottom: 21px;
+    border-bottom: 2px solid #BCC2C2;
+}
+
+div.film-container > img {
+    width: 99px;
+    height: 147.411px;
+    flex-shrink: 0;
+}
+
+div.film-info {
+    margin-top: 15px;
+}
+
+div.title {
+    margin-bottom: 11px;
+}
+
+div.title,
+div.features {
+    display: flex;
+    align-items: center;
+}
+
+div.title > h3{
+    margin-right: 7px;   
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 20px; /* 111.111% */
+}
+
+div.title > i {
+    margin-right: 4px;
+    color: gold;
+    font-size: 12px;
+}
+
+div.title > p,
+div.features > p {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px; /* 166.667% */
+}
+
+div.features {
+    margin-bottom: 11px;
+}
+
+p.duration {
+    margin-right: 16px;
+}
+
+p.genre {
+    margin-right: 21px;
+}
+
+p.plot {
+    color: #6B7280;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+  }
+  
+.read-more-link {
+    color: #4a90e2;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/**=======================
+   Button add / remove
+   =======================*/
+
+button.add-remove {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: none;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 12px 12px;
+    cursor: pointer;
+    margin-right: 5px;
+  }
+
+  .add-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cline x1='8' y1='2' x2='8' y2='14' stroke='white' stroke-width='2'/%3E%3Cline x1='2' y1='8' x2='14' y2='8' stroke='white' stroke-width='2'/%3E%3C/svg%3E");
+  }
+  
+  .remove-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cline x1='2' y1='8' x2='14' y2='8' stroke='white' stroke-width='2'/%3E%3C/svg%3E");
+  }
+  
+.checked-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M13.854 3.146a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3-3a.5.5 0 0 1 .708-.708L6 9.793l6.146-6.146a.5.5 0 0 1 .708 0z' fill='%23FFFFFF'/%3E%3C/svg%3E");
+}
+
+
+/**=======================
+   Typography
+   =======================*/
+  
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+img {
+    margin-bottom: 0;
+    border-radius: 3px;
+}
+
+.shorter-margin {
+    margin-top: 35px;
+}
+
+/**=======================
+   watchlist.html
+   =======================*/
+
+#watchlist-page .populated-list {
+    margin-top: 0;
+    padding-top: 14px;
+}
+
+#watchlist-page .blank-list {
+    margin-bottom: 5px;
+}
+
+
+#watchlist-page .features {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icon-plus {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-image: url('img/Icon-plus.png'); /* folosește imaginea corectă */
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#watchlist-page .action {
+    color: #363636;
+    text-align: center;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px; /* 142.857% */
+}
+
